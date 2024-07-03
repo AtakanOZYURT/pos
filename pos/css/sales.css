@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 55px); /* header yüksekliğini burada ayarlayın */
+    margin-top: 0px; /* header yüksekliğini burada ayarlayın */
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 100px; /* Genişlik 100px olarak ayarlandı */
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* justify-content: space-between olarak değiştirildi */
+    align-items: center;
+    text-align: center;
+    padding: 0; /* padding: 0 olarak değiştirildi */
+}
+
+.left-sidebar button,
+.right-sidebar button {
+    width: 100%;
+    flex: 1; /* Flex 1 olarak ayarlandı */
+    border: none;
+    background-color: #e0e0f0; /* Renk #e0e0f0 olarak değiştirildi */
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.right-sidebar .price-button {
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.right-sidebar .keyboard-button {
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.right-sidebar .back-button {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 583px; /* Genişlik tekrar 583px olarak ayarlandı */
+}
+
+.product-list,
+.numpad {
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-list {
+    background-color: purple;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1px;
+}
+
+.product-list button {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.numpad-button {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.numpad-button.double-width {
+    grid-column: span 2; /* Genişliği iki katına çıkarmak için */
+}
+
+.numpad-button.double-height {
+    grid-row: span 2; /* Yüksekliği iki katına çıkarmak için */
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box {
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: grey;
+    padding: 5px 0;
+}
+
+.tab {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #007bff;
+}
+
+.sales-list {
+    display: none; /* Varsayılan olarak gizli */
+    background-color: green;
+    flex: 1;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.payment-info {
+    background-color: yellow;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.payment-info button {
+    flex: 1;
+    height: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.payment-info button:nth-child(1) {
+    background-color: #28a745; /* İkram butonu için yeşil */
+}
+
+.payment-info button:nth-child(2) {
+    background-color: #ffc107; /* İndirim butonu için sarı */
+}
+
+.payment-info label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.payment-info input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.payment-option {
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.payment-option button {
+    flex: 1;
+    height: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.payment-option button:nth-child(1) {
+    background-color: #28a745; /* POS butonu için yeşil */
+}
+
+.payment-option button:nth-child(2) {
+    background-color: #ffc107; /* Nakit butonu için sarı */
+}
+
+.payment-option button:nth-child(3) {
+    background-color: #dc3545; /* Veresiye butonu için kırmızı */
+}
+
+.payment-option button:nth-child(4) {
+    background-color: #17a2b8; /* Parçalı ödeme butonu için mavi */
+}

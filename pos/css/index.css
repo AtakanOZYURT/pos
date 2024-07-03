@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* 100vh - header ve footer yüksekliği */
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main p {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #004080;
+    color: white;
+}

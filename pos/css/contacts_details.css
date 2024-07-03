@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .company-name {
+    font-size: 18px;
+}
+
+header .logout form {
+    margin: 0;
+}
+
+header .logout button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .logout button:hover {
+    background-color: #c82333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.back-button a:hover {
+    background-color: #0056b3;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttons-right {
+    display: flex;
+    gap: 10px;
+}
+
+.button-green {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-blue {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-yellow {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-red {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-header {
+    margin-bottom: 20px;
+}
+
+.details-header h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.details-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.stat-card:last-child {
+    margin-right: 0;
+}
+
+.stat-card h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+}

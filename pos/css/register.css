@@ -1,0 +1,89 @@
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px; /* Her yönden 50px boşluk */
+    min-height: 100vh;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Vertically center the form */
+    align-items: center;   /* Horizontally center the form */
+}
+
+.register-container {
+    margin: 50px auto; /* Üst ve alt 50px, sağ ve sol otomatik */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 10px;
+}
+
+.register-container h3 {
+    margin-bottom: 20px;
+}
+
+.register-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.register-container input,
+.register-container select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-container .terms {
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.register-container .terms input {
+    margin-right: 10px; /* Checkbox ile yazı arasına boşluk */
+}
+
+.register-container .terms label {
+    display: inline-block;
+    vertical-align: middle; /* Checkbox ile aynı hizaya getir */
+    line-height: 1.2; /* Yazıyı ortalamak için satır yüksekliği */
+}
+
+.register-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+}
+
+.register-container p {
+    margin-top: 20px;
+}
+
+.register-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container p a:hover {
+    text-decoration: underline;
+}
